@@ -1,0 +1,99 @@
+body{
+    background: hsl(218, 23%, 16%);
+}
+.attribution{
+display: flex;
+justify-content: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+}
+section{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position:  absolute ;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom: 0;
+    margin: auto;
+   height: 35%;
+    width: 35%;
+    background-color:  hsl(217, 19%, 24%);
+    padding: 35px;
+    border-radius: 25px;
+}
+.advice{
+    font-family: 'Manrope', sans-serif;
+    color: hsl(150, 100%, 66%);
+    display: flex;
+   
+    
+}
+.adv-text{
+    position: absolute;
+    display: flex;
+   bottom: 20%;
+   padding: 8%;
+   font-size: 28px;
+   font-family: 'Manrope', sans-serif;
+   color: hsl(193, 38%, 86%);
+}
+
+.divider{
+    position: absolute;
+    bottom: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button{
+    position: absolute;
+    bottom: -10%;
+    border-radius: 50%;
+    height: 19%;
+    width: 12%;
+    background-color: hsl(150, 100%, 66%);
+    border: none;
+    cursor: pointer;
+
+}
+button:hover {
+    cursor: pointer;
+    background-color: #52ffa8;
+    box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
+    transform: rotate(180deg);
+    transition: transform 10s;
+  }
+  button:active {
+    transform: scale(0.9);
+  }
+.mobile-divider{
+    display: none;
+}
+.onclick{
+    cursor: pointer;
+    background-color: #52ffa8;
+    box-shadow: hsl(150deg 100% 66%) 0px 0px 36px;
+    transform: rotate(180deg);
+    transition: transform 10s;
+}
+
+@media (max-width: 1100px) {
+    section{
+        width: 350px;
+    }
+    .mobile-divider{
+        display: flex;
+    }
+    .desktop-divider{
+        display: none;
+    }
+    button{
+        height: 15%;
+        width: 15%;
+    }
+}
